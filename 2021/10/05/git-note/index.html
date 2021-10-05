@@ -1,90 +1,216 @@
-<html>
-<!-- Head tag -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
 
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="安装git 访问Git (git-scm.com)  点击图示位置获取安装包   选择安装路径和编辑器，其余默认     git环境配置 右键启动Git Bash   设置用户名和邮箱 12git config --global user.name &quot;yangjiao&quot; #用户名git config --global user.email hit_yangjiao@163.co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git_note">
+<meta property="og:url" content="http://example.com/2021/10/05/git-note/index.html">
+<meta property="og:site_name" content="yangjiao&#39;s blog">
+<meta property="og:description" content="安装git 访问Git (git-scm.com)  点击图示位置获取安装包   选择安装路径和编辑器，其余默认     git环境配置 右键启动Git Bash   设置用户名和邮箱 12git config --global user.name &quot;yangjiao&quot; #用户名git config --global user.email hit_yangjiao@163.co">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE1.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE2.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE3.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE4.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE5.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE6.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE7.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE8.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE9.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE10.png">
+<meta property="og:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE11.png">
+<meta property="article:published_time" content="2021-10-05T08:43:21.000Z">
+<meta property="article:modified_time" content="2021-10-05T09:10:27.364Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE1.png">
+
+
+<link rel="canonical" href="http://example.com/2021/10/05/git-note/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/10/05/git-note/","path":"2021/10/05/git-note/","title":"git_note"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>git_note | yangjiao's blog</title>
   
-  <title>
-    git_note |
-    yangjiao&#39;s blog
-  </title>
-  
 
 
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
-  <meta property="og:title" content="git_note" />
-  <meta property="og:description" content="" />
-  <meta property='og:site_name' content='yangjiao&#39;s blog' />
-  <meta property="og:image" content="http://example.com/img/default.jpg" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:title" content="git_note" />
-
-  <meta name="twitter:image" content="http://example.com/img/default.jpg" />
-
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
-  
-<link rel="stylesheet" href="/css/style.css">
 
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
 
-<body>
-    <!-- Menu -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
-  <div class="container">
-    <a class="navbar-brand logo" href="http://example.com">
-      yangjiao&#39;s blog</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item item">
-          
-        <li class="nav-item item">
-          <a class="nav-link" href="/">
-            Home</a>
-        </li>
-        
-        <li class="nav-item item">
-          <a class="nav-link" href="/archives">
-            🗂️Archives</a>
-        </li>
-        
-        <li class="nav-item item">
-          <a class="nav-link" target="_blank" rel="noopener" href="https://hexo.io/">
-            Hexo</a>
-        </li>
-        
-        </li>
-      </ul>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
     </div>
   </div>
-</nav>
 
-    <main class="page main-page">
-        <div class="container blogPost">
-    <div class="row">
-        <div class="col-sm-9 px-md-5">
-            <h2 class="blog-post-title">
-                git_note
-            </h2>
-            <p class="meta">
-                <i class="far fa-clock"></i>
-                2021-10-05 
-            </p>
-            <!-- Content -->
-            <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><ul>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">yangjiao's blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85git"><span class="nav-number">1.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">git环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH%E9%85%8D%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">SSH配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87git%E5%90%91gitee%E4%BB%93%E5%BA%93%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">通过git向gitee仓库上传文件</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/05/git-note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yangjiao's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git_note
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-05 16:43:21 / Modified: 17:10:27" itemprop="dateCreated datePublished" datetime="2021-10-05T16:43:21+08:00">2021-10-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><ul>
 <li><p>访问<a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a></p>
 </li>
 <li><p>点击图示位置获取安装包</p>
@@ -138,94 +264,70 @@
 </li>
 </ul>
 
-            <br />
-            <p class="meta">
-                
-            </p>
-        </div>
-
-        <div class="col-sm-3">
-             
-<span><b> TL;DR</b></span>
-<p>
-	Yet another hexo theme.
-</p>
-<hr />
-
-
-<span><b> TL;DR 2</b></span>
-<p>
-	No, not another one :/
-</p>
-<hr />
-
- 
-
-<span
-	><a href="https://twitter.com/hexojs" target="_blank" rel="noopener"
-		><b
-			><i class="fab fa-twitter-square"></i>
-			<i class="fas fa-at"></i>
-			hexojs</b
-		></a
-	></span
->
-<br />
-<a class="twitter-timeline" data-height="800" data-dnt="true" data-chrome="nofooter transparent noheader noborders " target="_blank" rel="noopener" href="https://twitter.com/hexojs?ref_src=twsrc%5Etfw"></a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-        </div>
     </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/10/05/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
 </div>
-<!-- Menu fade on scroll -->
-<script>
-    var isScrolling;
-    var prevScrollpos = window.pageYOffset;
-    window.addEventListener(
-        'scroll',
-        function(event) {
-            window.clearTimeout(isScrolling);
-            isScrolling = setTimeout(function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    $('#navbar').slideDown();
-                } else {
-                    $('#navbar').slideUp();
-                }
-                prevScrollpos = currentScrollPos;
-            }, 66);
-        },
-        false
-    );
-</script>
 
 
-<a class="float-left gradient btn paginationbtn" href="/2021/10/05/hello-world/"><i class="fas fa-chevron-left"></i></a>
 
 
-    </main>
-    <!-- Footer -->
-    <footer class="page-footer">
-  <div class="container">
-    <div class="social-icons">
-      
-      <a href="https://hexo.io/" title="Hexo.io" target="_blank" rel="noopener" class="fas fa-home"></a>
-      
-      <a href="https://twitter.com/hexojs" title="@hexojs" target="_blank" rel="noopener" class="fab fa-twitter"></a>
-      
-      <a href="https://github.com/RandomAdversary/Gradient/issues" title="Report issue" target="_blank" rel="noopener" class="fas fa-bug"></a>
-      
-    </div>
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
-</footer>
-    <!-- After footer scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
 
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
 </html>
