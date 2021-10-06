@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-05T15:44:53.791Z</updated>
+  <updated>2021-10-06T05:10:17.399Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nvm-note</title>
+    <link href="http://example.com/2021/10/06/nvm-note/"/>
+    <id>http://example.com/2021/10/06/nvm-note/</id>
+    <published>2021-10-06T05:09:40.000Z</published>
+    <updated>2021-10-06T05:10:17.399Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="引入原因"><a href="#引入原因" class="headerlink" title="引入原因"></a>引入原因</h2><ul><li>使用<a href="https://yyangjiao.github.io/2021/10/05/nodejs-note/">nodejs-note | yangjiao’s blog (yyangjiao.github.io)</a>所述方法安装nodejs后执行<code>npm install</code>命令会遇到EACCES permissions errors，必须要在管理员身份下运行cmd或git才可以完成安装</li><li><a href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">Resolving EACCES permissions errors when installing packages globally | npm Docs (npmjs.com)</a>官方给出两种解决方案：重装nodejs或改变npm的默认目录，但第二种方案不适用Windos系统</li><li><a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">Downloading and installing Node.js and npm | npm Docs (npmjs.com)</a>采用第一种方案时要注意：官方强烈建议使用Node版本管理器（如nvm）来安装nodejs，而不建议使用安装包来安装nodejs，因为node安装程序会将npm安装在具有本地权限的目录下，这将在你使用npm执行全局安装时导致权限错误</li><li>官方给出的Windos系统下的Node版本管理器有两种：nodist和nvm-windos，这里我选择的是nvm-windos</li></ul><h2 id="安装nvm-windos"><a href="#安装nvm-windos" class="headerlink" title="安装nvm-windos"></a>安装nvm-windos</h2><ul><li><p>访问<a href="https://github.com/coreybutler/nvm-windows/releases/tag/1.1.7">Release 1.1.7 - Maintenance Release · coreybutler/nvm-windows (github.com)</a></p></li><li><p>获取安装包</p><p><img src="https://gitee.com/yangjaio77/nvm_note_img_host/raw/master/img1.png"></p></li><li><p>选择nvm-windos安装目录</p><p><img src="https://gitee.com/yangjaio77/nvm_note_img_host/raw/master/img2.png"></p></li><li><p>选择nodejs安装目录</p><p><img src="https://gitee.com/yangjaio77/nvm_note_img_host/raw/master/img3.png"></p></li></ul><h2 id="使用nvm安装nodejs"><a href="#使用nvm安装nodejs" class="headerlink" title="使用nvm安装nodejs"></a>使用nvm安装nodejs</h2><ul><li><p>删除原nodejs安装目录和C:\Users\74615\.npmrc以及环境变量-系统变量中的NODE_PATH</p></li><li><p>查看nvm版本</p><p><img src="https://gitee.com/yangjaio77/nvm_note_img_host/raw/master/img4.png"></p></li><li><p>执行命令<code>nvm install nodejs版本号</code>安装对应版本的nodejs</p><p><img src="https://gitee.com/yangjaio77/nvm_note_img_host/raw/master/img5.png"></p></li><li><p>执行<code>nvm ls</code>查看已安装的nodejs版本，执行<code>nvm use nodejs版本号</code>启用该版本的nodejs</p><p><img src="https://gitee.com/yangjaio77/nvm_note_img_host/raw/master/img6.png"></p></li><li><p>这种方式安装nodejs不需要再后续配置nodejs</p></li><li><p>后续执行命令如<code>npm install hexo-cli -g</code>进行全局安装时不再需要管理员权限</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;引入原因&quot;&gt;&lt;a href=&quot;#引入原因&quot; class=&quot;headerlink&quot; title=&quot;引入原因&quot;&gt;&lt;/a&gt;引入原因&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用&lt;a href=&quot;https://yyangjiao.github.io/2021/10/05/nodejs</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>nodejs-note</title>
@@ -42,9 +63,9 @@
     <link href="http://example.com/2021/10/05/git-note/"/>
     <id>http://example.com/2021/10/05/git-note/</id>
     <published>2021-10-05T08:43:21.000Z</published>
-    <updated>2021-10-06T02:08:42.476Z</updated>
+    <updated>2021-10-06T02:18:53.112Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><ul><li><p>访问<a href="https://git-scm.com/">Git (git-scm.com)</a></p></li><li><p>点击图示位置获取安装包</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE1.png"></p></li><li><p>选择安装路径和编辑器，其余默认</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE2.png"></p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE3.png"></p></li></ul><h2 id="git环境配置"><a href="#git环境配置" class="headerlink" title="git环境配置"></a>git环境配置</h2><ul><li><p>右键启动Git Bash</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE4.png"></p></li><li><p>设置用户名和邮箱</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yangjiao&quot; #用户名</span><br><span class="line">git config --global user.email hit_yangjiao@163.com #邮箱</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE5.png"></p></li></ul><h2 id="SSH配置"><a href="#SSH配置" class="headerlink" title="SSH配置"></a>SSH配置</h2><ul><li><p>打开git bash</p></li><li><p>执行命令<code>ssh-keygen</code>生成公钥和私钥，提示是否设置密码，一般不予设置，直接回车即可，这样会在文件夹（<code>~/.ssh</code>）里生成私钥 id_rsa和公钥id_rsa.pub</p></li><li><p>可以通过执行命令<code>start ~/.ssh</code>打开存放私钥和公钥的文件夹</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE6.png"></p></li><li><p>执行命令<code>cat ~/.ssh/id_rsa.pub</code>查看公钥</p></li></ul><h2 id="通过git向gitee仓库上传文件"><a href="#通过git向gitee仓库上传文件" class="headerlink" title="通过git向gitee仓库上传文件"></a>通过git向gitee仓库上传文件</h2><ul><li><p>复制仓库链接</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE7.png"></p></li><li><p>打开git base，执行命令<code>git clone https://gitee.com/yangjaio77/git_note_img_host.git</code></p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE8.png"></p></li><li><p>将要上传gitee仓库的文件移动到该文件夹下（<code>git_note_img_host</code>）</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE9.png"></p></li><li><p>执行命令<code>cd git_note_img_host/</code>进入该文件夹下</p></li><li><p>依次执行下述命令将文件上传到gitee仓库</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m &quot;upload test&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE10.png"></p></li><li><p>查看gitee仓库是否更新</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE11.png"></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><ul><li><p>访问<a href="https://git-scm.com/">Git (git-scm.com)</a></p></li><li><p>点击图示位置获取安装包</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE1.png"></p></li><li><p>选择安装路径和编辑器，其余默认</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE2.png"></p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE3.png"></p></li></ul><h2 id="git环境配置"><a href="#git环境配置" class="headerlink" title="git环境配置"></a>git环境配置</h2><ul><li><p>右键启动Git Bash</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE4.png"></p></li><li><p>设置用户名和邮箱</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yangjiao&quot; #用户名</span><br><span class="line">git config --global user.email hit_yangjiao@163.com #邮箱</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE5.png"></p></li></ul><h2 id="SSH配置"><a href="#SSH配置" class="headerlink" title="SSH配置"></a>SSH配置</h2><ul><li><p>打开git bash</p></li><li><p>执行命令<code>ssh-keygen -t rsa -C &quot;hit_yangjiao@163.com&quot;</code>生成公钥和私钥，提示是否设置密码，一般不予设置，直接回车即可，这样会在文件夹（<code>~/.ssh</code>）里生成私钥 id_rsa和公钥id_rsa.pub</p></li><li><p>可以通过执行命令<code>start ~/.ssh</code>打开存放私钥和公钥的文件夹</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE6.png"></p></li><li><p>执行命令<code>cat ~/.ssh/id_rsa.pub</code>查看公钥</p></li></ul><h2 id="通过git向gitee仓库上传文件"><a href="#通过git向gitee仓库上传文件" class="headerlink" title="通过git向gitee仓库上传文件"></a>通过git向gitee仓库上传文件</h2><ul><li><p>复制仓库链接</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE7.png"></p></li><li><p>打开git base，执行命令<code>git clone https://gitee.com/yangjaio77/git_note_img_host.git</code></p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE8.png"></p></li><li><p>将要上传gitee仓库的文件移动到该文件夹下（<code>git_note_img_host</code>）</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE9.png"></p></li><li><p>执行命令<code>cd git_note_img_host/</code>进入该文件夹下</p></li><li><p>依次执行下述命令将文件上传到gitee仓库</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m &quot;upload test&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE10.png"></p></li><li><p>查看gitee仓库是否更新</p><p><img src="https://gitee.com/yangjaio77/git_note_img_host/raw/master/%E5%9B%BE11.png"></p></li></ul>]]></content>
     
     
       
