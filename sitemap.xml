@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2021/10/07/hexo-note/</loc>
+    <loc>https://yyangjiao.github.io/2021/10/07/hexo-note/</loc>
     
     <lastmod>2021-10-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/10/06/nvm-note/</loc>
+    <loc>https://yyangjiao.github.io/2021/10/06/nvm-note/</loc>
     
     <lastmod>2021-10-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/10/05/nodejs-note/</loc>
+    <loc>https://yyangjiao.github.io/2021/10/05/nodejs-note/</loc>
     
     <lastmod>2021-10-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/10/05/git-note/</loc>
+    <loc>https://yyangjiao.github.io/2021/10/05/git-note/</loc>
     
     <lastmod>2021-10-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/link/index.html</loc>
+    <loc>https://yyangjiao.github.io/link/index.html</loc>
     
     <lastmod>2021-10-05</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://yyangjiao.github.io/categories/index.html</loc>
     
     <lastmod>2021-10-05</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://yyangjiao.github.io/tags/index.html</loc>
     
     <lastmod>2021-10-05</lastmod>
     
@@ -52,8 +52,8 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
-    <lastmod>2021-10-06</lastmod>
+    <loc>https://yyangjiao.github.io/</loc>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
