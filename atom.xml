@@ -6,7 +6,7 @@
   <link href="https://yyangjiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://yyangjiao.github.io/"/>
-  <updated>2021-10-06T16:19:04.217Z</updated>
+  <updated>2021-10-19T15:09:34.410Z</updated>
   <id>https://yyangjiao.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu18.04设置开机自启动脚本</title>
+    <link href="https://yyangjiao.github.io/2021/10/19/Ubuntu18.04%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC/"/>
+    <id>https://yyangjiao.github.io/2021/10/19/Ubuntu18.04%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC/</id>
+    <published>2021-10-19T13:20:21.000Z</published>
+    <updated>2021-10-19T15:09:34.410Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在linux主机上使用hexo搭建博客后，需要实现在开机后自启动hexo服务的功能</p><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul><li>Ubuntu18.04开始改用systemd管理进程启动</li><li>systemd默认会读取 <code>/etc/systemd/system </code>下的配置文件</li><li>而我们需要的配置文件是<code>/lib/systemd/system/rc-local.service</code>  </li></ul><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><ul><li><p>编辑<code>/lib/systemd/system/rc-local.service</code>  添加<code>Install</code>区块，如果不添加该区块信息，如<code>WantedBy</code>，<code>Alias</code>等，系统就不认为该文件是一个<code>systemd</code>服务</p><p><img src="https://gitee.com/yyangjiao/Ubuntu18.04_img_host/raw/master/img1.png"></p><ul><li>其中<code>Unit</code>区块主要描述服务的启动顺序以及依赖关系，<code>Service</code>区块主要描述如何启动，<code>Install</code>区块描述如何安装这个服务；</li><li>对<code>Unit</code>区块加以说明：ConditionFileIsExecutable指定了执行的文件，After 表示在 network.target 这个target后面进行执行，也就是网络启动完成之后，会执行<code>/etc/rc.local</code>文件；</li><li>Ubuntu18.04默认没有<code>/etc/rc.local</code>文件，需要自己创建</li></ul></li><li><p>因为systemd 默认读取<code>/etc/systemd/system</code>下的配置文件, 所以需要下述命令将<code>/lib/systemd/system/rc-local.service</code>  链接到<code> /etc/systemd/system 目录下</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -fs /lib/systemd/system/rc-local.service /etc/systemd/system/rc-local.service</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yyangjiao/Ubuntu18.04_img_host/raw/master/img2.png"></p></li><li><p>执行下述命令，创建<code>/etc/rc.local</code>文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo touch /etc/rc.local</span><br></pre></td></tr></table></figure></li><li><p>编辑<code>/etc/rc.local</code>文件，脚本的作用是开机后将文本”this just a test”写入<code>text.log</code>文件，为了方便查看，我把它放在开机目录下，内容如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">echo &quot;this just a test&quot; &gt; /home/yangjiao/text.log</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yyangjiao/Ubuntu18.04_img_host/raw/master/img3.png"></p></li><li><p>执行下述命令，更改一下权限</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod a+x /etc/rc.local</span><br></pre></td></tr></table></figure></li><li><p>依次执行下述命令，启动服务并查看它的状态</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start rc-local.service</span><br><span class="line">sudo systemctl status rc-local.service</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/yyangjiao/Ubuntu18.04_img_host/raw/master/img4.png"></p></li><li><p>reboot命令重启后，查看相应目录下是否增加了<code>text.log</code>文件</p><p><img src="https://gitee.com/yyangjiao/Ubuntu18.04_img_host/raw/master/img5.png"></p></li></ul><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在linux主机上使用hexo搭建博客后，需要实现在开机后自启动hexo服务的功能&lt;/p&gt;
+&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hexo-note</title>
