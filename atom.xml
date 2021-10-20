@@ -6,7 +6,7 @@
   <link href="https://yyangjiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://yyangjiao.github.io/"/>
-  <updated>2021-10-20T08:01:28.762Z</updated>
+  <updated>2021-10-20T08:19:23.997Z</updated>
   <id>https://yyangjiao.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx部署hexo</title>
+    <link href="https://yyangjiao.github.io/2021/10/20/nginx%E9%83%A8%E7%BD%B2hexo/"/>
+    <id>https://yyangjiao.github.io/2021/10/20/nginx%E9%83%A8%E7%BD%B2hexo/</id>
+    <published>2021-10-20T08:09:42.000Z</published>
+    <updated>2021-10-20T08:19:23.997Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><p>执行下述命令安装nginx</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx</span><br></pre></td></tr></table></figure><h2 id="修改root"><a href="#修改root" class="headerlink" title="修改root"></a>修改root</h2><ul><li><p>执行命令编辑<code>/etc/nginx/sites-enabled/default</code>文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/nginx/sites-enabled/default</span><br></pre></td></tr></table></figure></li><li><p>将<code>root</code>改为<code>/home/yangjiao/blog/public</code>，即博客存放路径下的public目录</p><p><img src="https://gitee.com/yyangjiao/Ubuntu18.04_img_host/raw/master/img6.png"></p></li></ul><h2 id="重启nginx"><a href="#重启nginx" class="headerlink" title="重启nginx"></a>重启nginx</h2><p>执行命令如下完成重启</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart nginx</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装nginx&quot;&gt;&lt;a href=&quot;#安装nginx&quot; class=&quot;headerlink&quot; title=&quot;安装nginx&quot;&gt;&lt;/a&gt;安装nginx&lt;/h2&gt;&lt;p&gt;执行下述命令安装nginx&lt;/p&gt;
+&lt;figure class=&quot;highlight plainte</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Ubuntu18.04设置开机自启动脚本</title>
