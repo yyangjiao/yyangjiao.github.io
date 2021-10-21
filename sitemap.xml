@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yyangjiao.github.io/2021/10/21/cpp-note/</loc>
+    
+    <lastmod>2021-10-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yyangjiao.github.io/2021/10/20/nginx%E9%83%A8%E7%BD%B2hexo/</loc>
     
     <lastmod>2021-10-20</lastmod>
